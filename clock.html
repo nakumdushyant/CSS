@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+
+        .x{
+            height: 450px;
+            width: 19%;
+           box-shadow: 0px 0px 20px gray;
+            margin: 100px auto;
+            position: relative;
+            
+            transition: 1s;
+
+           
+            
+        }
+        .y{
+            height: 320px;
+            width: 100%;
+            background:url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg) ;
+            background-size: 100% 100%;
+            text-align: center;
+            line-height: 660px;
+            font-size: 16px;
+           
+        }
+        .z{
+            color: red;
+            text-decoration: none;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          /* letter-spacing: 1px; */
+          font-weight: 800;
+          
+        }
+        b{
+           position: absolute;
+           top: 350px;
+           left: 70px;
+           font-size: 18px;
+           letter-spacing: 0.5px;
+        }
+
+        strick{
+           position: absolute;
+           top: 350px;
+           left: 150px;
+           font-size: 18px;
+           letter-spacing: 0.5px;
+           text-decoration: line-through;
+           color: rgba(0, 0, 0, 0.35);
+        }
+        .a{
+            height: 35px;
+            width: 75%;
+            background:aquamarine;
+            transform: translate(33px,65px);
+            text-align: center;
+            line-height: 40px;
+            outline: 5px aquamarine solid;
+            transition: .2s;
+
+        }
+        .b{
+            color: white;
+            text-decoration: none;
+
+        }
+        .a:hover{
+            outline-offset: 6px;
+            transition: .2s;
+        }
+        .new{
+            height: 20px;
+            width: 20%;
+            background: rgba(255, 0, 0, 0.7);
+            text-align: center;
+            line-height: 20px;
+            transform:translate(200px,-355px) ;
+            color: white;
+        }
+        .view{
+            height: 45px;
+            width: 100%;
+            background: black;
+            color: white;
+            text-align: center;
+            line-height: 45px;
+            position:absolute;
+            top: -45px;
+            text-decoration: none;
+            transition: .7s;
+            opacity: 0;
+        }
+        .view:hover{
+            background: aqua;
+            transition: .7s;
+        }
+        .x:hover .view{
+            top: 275px;
+            opacity: 1;
+            transition: 1s;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="x">
+
+        <b>$ 160.99</b>
+        <strick>$ 290.71</strick>
+
+        <div class="y">
+            <a href="" class="z">Analog Watch</a>
+        </div>
+        
+
+        <div class="a">
+    <a href="" class="b">ADD TO CART</a>  
+        </div>
+
+        <div class="new">New</div>
+
+        <a href="" class="view"><div >
+            QUICK VIEW
+        </div></a>    
+    </div>
+</body>
+</html>
