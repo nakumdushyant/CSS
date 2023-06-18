@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 250px;
+            /* background:; */
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+       .main1{
+        height: 500px;
+        width: 500px;
+        background: conic-gradient(red 0deg, red 90deg, black 100deg, black 180deg ,blue 180deg,blue 270deg ,black 270deg);
+        position: absolute;
+         transform: rotate(0deg);
+         transition: 20s;
+
+       }
+       
+       .main:hover .main1{
+        transform: rotate(1080deg);
+        /* transition: 6s; */
+       }
+       .main2{
+        height: 385px;
+        width: 235px;
+        background: black;
+        position: absolute;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="main1">    
+        </div>
+        <div class="main2"></div>
+    </div>
+</body>
+</html>
