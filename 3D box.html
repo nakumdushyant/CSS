@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 100px;
+            width: 100px;
+            /* background: blue; */
+            margin: 100px auto;
+            transition: 2s;
+            transform-style: preserve-3d;
+            position: relative;
+            animation: nakum 5s linear infinite;
+        }
+        .main .a ,.b ,.c, .d ,.e ,.f{
+            height: 100px;
+            width: 100px;
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+        }
+        .a{
+            background: red;
+            transform:rotateZ(0deg) translateZ(50px);
+        }
+        .b{
+            background: blue;
+            transform: rotateX(90deg) translateZ(50px); 
+        }
+        .e{
+            background: purple;
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+        .c{
+            background: yellow;
+            transform: rotateY(90deg) translateZ(50px);
+            backface-visibility: hidden; 
+        }
+        .d{
+            background: green;
+            transform: rotateY(-90deg) translateZ(50px);
+        }
+        .f{
+            background: lightcoral;
+            transform: rotateY(180deg) translateZ(50px);
+        }
+       
+       @keyframes nakum{
+        from{transform:rotateX(0deg) rotateY(0deg) ;}
+        to{transform:rotateX(360deg) rotateY(360deg) ;}
+       }
+       
+       
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D</div>
+        <div class="e">F</div>
+        <div class="f">G</div>
+    </div>
+</body>
+</html>
