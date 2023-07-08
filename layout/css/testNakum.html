@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{box-sizing: border-box;}
+        .main 
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left 
+        {
+            border: 2px solid;
+            height: 600px;
+            width:25% ;
+        }
+        .left .logo
+        {
+            border: 2px solid;
+            height: 100px;
+            
+        }
+
+        .left .links
+        {
+            border: 2px solid;
+            height:500px;
+            
+        }
+
+        .links li 
+        {
+            border: 3px solid;
+            padding: 20px 14px;
+            list-style: none;
+        }
+
+        .links a 
+        {
+            position: relative;
+        }
+      .links a::after 
+      {
+
+        content: "";
+        height: 5px;
+        width: 100%;
+        background: #000;
+        position: absolute;
+        top:100%;
+        left:0;
+      }
+
+
+        
+        .right 
+        {
+            border: 2px solid;
+            height: 600px;
+            width:75%;
+        }
+
+     
+        @media(max-width:500px)
+        {
+            .left,.right{width: 100%;}
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="main">
+        <div class="left x">
+            <div class="logo">Logo</div>
+            <div class="links">
+              <div class="chk">
+                    <li>
+                        <a href="">HOme
+                            <!-- <div class="c"></div> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">About
+                            <!-- <div class="c"></div> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">Services
+                            <!-- <div class="c"></div> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">blogs
+                            <!-- <div class="c"></div> -->
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">Contact
+                            <!-- <div class="c"></div> -->
+                        </a>
+                    </li>
+                  
+              </div>
+            </div>
+        </div>
+        <div class="right x">Right</div>
+    </div>
+</body>
+</html>
