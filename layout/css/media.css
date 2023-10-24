@@ -216,14 +216,14 @@
 
 
     .border{
-        background: url(/image/theme-10-600x414.jpg);
+        background: url(../layout/image/theme-10-600x414.jpg);
         background-size: cover;
         /* background-repeat: no-repeat; */
         height:280px;
         width: 430px;
     }
     .photo{
-        background: url(/image/theme-10-600x414.jpg);
+        background: url(../layout/image/theme-10-600x414.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         height:280px;

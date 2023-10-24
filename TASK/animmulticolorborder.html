@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+            background: conic-gradient(lightcoral,lightgreen);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* start round border */
+        .round{
+            height: 330px;
+            width: 280px;
+            transition: 10s;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        .round::before{
+            content: " ";
+            height: 600px;
+            width: 600px;
+            background: linear-gradient(blue,pink,red);
+            position: absolute;
+            animation: round1 5s linear infinite;
+        }
+        .round::after{
+            content: " ";
+            height: 310px;
+            width: 260px;
+            background: white;
+            position: absolute;
+        }
+        @keyframes round1 {
+            50%{
+                transform: rotate(-360deg);
+            }
+            50%{
+                transform: rotate(500deg);
+            }
+            
+        }
+        /* End round border */
+
+    </style>
+</head>
+<body>
+
+    <div class="round">      
+    </div>
+
+</body>
+</html>

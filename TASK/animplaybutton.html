@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        body{
+            height: 97vh;
+        }
+        .main{
+            height: 73%;
+            width: 59%;
+            /* border: 2px solid black; */
+            position: relative;
+            margin: auto;
+        }
+        .a{
+            height: 120px;
+            width: 120px;
+            /* background: blue; */
+            position: relative;
+            position: absolute;
+            border-radius: 50%;
+            /* transform: scale(0); */
+            margin: auto;
+            bottom: 200px;
+            left: 380px;
+            margin-top: 200px;
+            font-size: 25px;
+            transition: 1s;
+
+        }
+        .a::after{
+            content: "";
+            height: 70px;
+            width: 70px;
+            background: white;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            border-radius: 50%;
+            transition: 1s;
+
+        }
+        .a::before{
+            content: "";
+            height: 120px;
+            width: 120px;
+            background: white;
+            position: absolute;
+            border-radius: 50%;
+            animation: Abhay 2s linear infinite;
+        }
+        .fa{
+            position: absolute;
+            left: 54px;
+            top: 48px;
+            z-index: 1;
+        }
+        .a:hover::after{
+            background-color: blue;
+        }
+        .a:hover{
+            color:white
+        }
+        @keyframes Abhay {
+            from{
+                transform: scale(0);
+            }
+            to{
+                transform: scale(1);
+                opacity: 0;
+            }
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <video src="../Images/title-ar-sample-video-4-50mb-for-testing-freedownloadvideo.net.mp4" height="100%" width="100%" controls></video>
+        <div class="a">
+            <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+</html>

@@ -68,7 +68,7 @@
     overflow: auto; 
 }
 .left .logo{
-    background: url(./image/p-dark-logo3.png);
+    background: url(../layout/image/p-dark-logo3.png);
     width: 100%;
     padding: 45px 26px 1px 45px ; 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
@@ -369,7 +369,7 @@ h1{
 /* section 3 start */
 
 .section3{
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/image/theme-07-600x589.jpg);
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../layout/image/theme-07-600x589.jpg);
     background-size:cover,cover;
     background-attachment: fixed;
     padding-top: 60px;
@@ -478,7 +478,7 @@ h1{
      height: 130px;
      width: 130px;
      border-radius: 50%;
-     background:linear-gradient(rgba(255, 0, 179,.3),rgba(0,0,255,.3)),url(/image/gallery-01.jpg);
+     background:linear-gradient(rgba(255, 0, 179,.3),rgba(0,0,255,.3)),url(../layout/image/gallery-01.jpg);
      background-size: cover,cover;
      font-size: 14px;
      display: flex;
@@ -513,7 +513,7 @@ h3{
     height: 170px;
     width: 170px;
     border-radius: 50%;
-    background:linear-gradient(rgba(255, 0, 179,.3),rgba(0,0,255,.3)),url(/image/gallery-01.jpg);
+    background:linear-gradient(rgba(255, 0, 179,.3),rgba(0,0,255,.3)),url(../layout/image/gallery-01.jpg);
     background-size: cover,cover;
     font-size: 14px;
     display: flex;
@@ -638,7 +638,7 @@ h3{
 
 .section5{
     /* border: 1px red solid; */
-    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/image/theme-13-600x414.jpg);
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../layout/image/theme-13-600x414.jpg);
     background-size: cover,cover;
     background-attachment: fixed;
 }
@@ -886,7 +886,7 @@ flex-wrap: wrap;
     transform: scaleY(1);
 }
 .img {
-    background: url(/image/home-author-01-122x122.jpg);
+    background: url(../layout/image/home-author-01-122x122.jpg);
     background-size: cover;
     filter: grayscale(100%);
     border-radius: 50%;
@@ -1067,7 +1067,7 @@ margin-top: 50px;
     opacity: 1;
 }
 .col1a{
-    background: url(/image/theme-01-600x589.jpg);
+    background: url(../layout/image/theme-01-600x589.jpg);
     background-size: cover;
     /* border: 1px solid; */
     height:260px;
@@ -1076,7 +1076,7 @@ margin-top: 50px;
     transition: 1s; 
 }
 .col1a:hover{
-    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(/image/theme-01-600x589.jpg);
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(../layout/image/theme-01-600x589.jpg);
     background-size: cover,cover;
     transform: scale(1.150) rotate(10deg);
 }
@@ -1134,7 +1134,7 @@ margin-top: 50px;
     background: linear-gradient(90deg,blue,rgb(204, 10, 84));
 }
 .col2a{
-    background: url(/image/theme-02-600x589.jpg);
+    background: url(../layout/image/theme-02-600x589.jpg);
     background-size: cover;
 }
 .col2a:hover{
@@ -1142,23 +1142,23 @@ margin-top: 50px;
     background-size: cover,cover;
 }
 .col3a{
-    background: url(/image/theme-03-600x589.jpg);
+    background: url(../layout/image/theme-03-600x589.jpg);
     background-size: cover;
 }
 .col3a:hover{
-    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(/image/theme-03-600x589.jpg);
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(../layout/image/theme-03-600x589.jpg);
     background-size: cover,cover;
 }
 .col4a{
-    background: url(/image/theme-04-600x589.jpg);
+    background: url(../layout/image/theme-04-600x589.jpg);
     background-size: cover;
 }
 .col4a:hover{
-    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(/image/theme-04-600x589.jpg);
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(../layout/image/theme-04-600x589.jpg);
     background-size: cover,cover;
 }
 .col5a{
-    background: url(/image/theme-05-600x589.jpg);
+    background: url(../layout/image/theme-05-600x589.jpg);
     background-size: cover;
 }
 .col5a:hover{
@@ -1166,27 +1166,27 @@ margin-top: 50px;
     background-size: cover,cover;
 }
 .col6a{
-    background: url(/image/theme-06-600x589.jpg);
+    background: url(../layout/image/theme-06-600x589.jpg);
     background-size: cover;
 }
 .col6a:hover{
-    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(/image/theme-06-600x589.jpg);
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(../layout/image/theme-06-600x589.jpg);
     background-size: cover,cover;
 }
 .col7a{
-    background: url(/image/theme-07-600x589.jpg);
+    background: url(../layout/image/theme-07-600x589.jpg);
     background-size: cover;
 }
 .col7a:hover{
-    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(/image/theme-07-600x589.jpg);
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(../layout/image/theme-07-600x589.jpg);
     background-size: cover,cover;
 }
 .col8a{
-    background: url(/image/theme-06-600x589.jpg);
+    background: url(../layout/image/theme-06-600x589.jpg);
     background-size: cover;
 }
 .col8a:hover{
-    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(/image/theme-06-600x589.jpg);
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,.2),rgba(0,0,0,.3),rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9),rgba(0,0,0,1)), url(../layout/image/theme-06-600x589.jpg);
     background-size: cover,cover;
 }
 .part8-3{
@@ -1273,7 +1273,7 @@ margin-top: 50px;
     padding: 10px 10px;
 }
 .border{
-    background: url(/image/theme-10-600x414.jpg);
+    background: url(../layout/image/theme-10-600x414.jpg);
     background-size: cover;
     height:160px;
     width: 230px;
@@ -1281,7 +1281,7 @@ margin-top: 50px;
     overflow: hidden;
 }
 .photo{
-    background: url(/image/theme-10-600x414.jpg);
+    background: url(../layout/image/theme-10-600x414.jpg);
     background-size: cover;
     height:160px;
     width: 230px;
@@ -1289,32 +1289,32 @@ margin-top: 50px;
     transition: 0.4s;
 }
 .part9-2a-1:hover .photo{
-    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(/image/theme-10-600x414.jpg);
+    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../layout/image/theme-10-600x414.jpg);
     background-size: cover,cover;
    transform: scale(1.1);
 }
 .photo1{
-    background: url(/image/theme-09-600x414.jpg);
+    background: url(../layout/image/theme-09-600x414.jpg);
     background-size: cover;
 }
 .part9-2a-1:hover .photo1{
-    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(/image/theme-09-600x414.jpg);
+    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../layout/image/theme-09-600x414.jpg);
     background-size: cover,cover;
 }
 .photo2{
-    background: url(/image/theme-13-600x414.jpg);
+    background: url(../layout/image/theme-13-600x414.jpg);
     background-size: cover;
 }
 .part9-2a-1:hover .photo2{
-    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(/image/theme-13-600x414.jpg);
+    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../layout/image/theme-13-600x414.jpg);
     background-size: cover,cover;
 }
 .photo3{
-    background: url(/image/theme-14-600x414.jpg);
+    background: url(../layout/image/theme-14-600x414.jpg);
     background-size: cover;
 }
 .part9-2a-1:hover .photo3{
-    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(/image/theme-14-600x414.jpg);
+    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../layout/image/theme-14-600x414.jpg);
     background-size: cover,cover;
 }
 .liti{
@@ -1369,7 +1369,7 @@ margin-top: 50px;
     padding: 10px 0px 0px 10px;
 }
 .border1{
-    background: url(/image/theme-13.jpg);
+    background: url(../layout/image/theme-13.jpg);
     background-size: cover;
     height:400px;
     width: 530px;
@@ -1377,7 +1377,7 @@ margin-top: 50px;
     overflow: hidden;
 }
 .photo4{
-    background: url(/image/theme-13.jpg);
+    background: url(../layout/image/theme-13.jpg);
     background-size: cover;
     height:400px;
     width: 530px;
@@ -1385,7 +1385,7 @@ margin-top: 50px;
     transition: 0.4s;
 }
 .part9-2b:hover .photo4{
-    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(/image/theme-13.jpg);
+    background:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url(../layout/image/theme-13.jpg);
     background-size: cover,cover;
    transform: scale(1.1);
 }

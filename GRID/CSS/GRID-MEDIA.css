@@ -2,7 +2,7 @@
 
   /*part1 start  */
 
-  .part1{
+  .part1{  
     display: grid;
     grid-template-rows: repeat(4,1fr);
     grid-template-columns: 1fr;
