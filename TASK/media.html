@@ -1,0 +1,40 @@
+59media.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div 
+        {
+            height: 200px;
+            background: gray;
+            font-size: 3.4vw;
+        }
+
+        @media only screen and (max-width:992px)
+        {
+            div{background: red;}
+        }
+
+        @media (max-width:500px)
+        {
+            div{background: blue;
+            height: 100px;
+            width: 100px;
+            overflow:auto;
+            border: 5px groove gray;
+            }
+   
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum dicta quae, quas totam aliquam ut qui expedita beatae asperiores. Magni veniam nihil architecto quo molestias cupiditate corporis officiis maxime atque?
+    </div>
+    
+</body>
+</html>

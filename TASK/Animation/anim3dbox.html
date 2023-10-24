@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 700px;
+            width: 700px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .mn{
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: abhay 5s linear infinite forwards;
+        }
+        .mn .a,.b,.c,.d,.e,.f{
+            height: 400px;
+            width: 400px;
+            border-radius: 30px;
+            font-size: 400px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            backface-visibility: hidden;
+            
+        }
+        .a{
+            background: rgba(255, 0, 0, 1);
+            transform: rotateY(0deg) translateZ(210px);
+        }
+        .b{
+            background: rgba(255, 255, 0, 1);
+            transform: rotateY(90deg) translateZ(210px);
+        }
+        .c{
+            background: rgba(0, 0, 255, 1);
+            transform: rotateY(180deg) translateZ(210px);
+        }
+        .d{
+            background: rgba(0, 255, 0, 1);
+            transform: rotateY(-90deg) translateZ(210px);
+        }
+        .e{
+            background: lightcoral;
+            transform: rotateX(90deg) translateZ(210px);
+        }
+        .f{
+            background: lightblue;
+            transform: rotateX(-90deg) translateZ(210px);
+        }
+
+        @keyframes abhay 
+        {
+            0%{
+                transform: rotateY(0deg) rotateX(0deg);
+            }
+            100%{
+                transform: rotateY(360deg) rotateX(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="mn">
+            
+            <div class="a">1</div>
+            <div class="b">2</div>
+            <div class="c">3</div>
+            <div class="d">4</div>
+            <div class="e">5</div>
+            <div class="f">6</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        .fa-user{
+            /* background: conic-gradient(red,blue); */
+            /* width: 70px; */
+            /* height: 70px; */
+            font-size: 30px;
+            color: white;
+            /* border-radius: 50%; */
+            /* text-align: center; */
+            /* line-height: 70px; */
+            transition: 1s;
+        }
+        .i{
+            height: 70px;
+            width: 70px;
+            background: conic-gradient(red,blue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 150px auto;
+            transition: 1s;
+            
+        }
+        .i:hover{
+            transform: rotate(360deg);
+        }
+        .i:hover .fa-user{
+            transform: scale(0) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="i">
+        <i class="fa fa-user"></i>
+    </div>
+</body>
+</html>

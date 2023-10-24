@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 700px;
+            /* background: red; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .a{
+            height: 50px;
+            width: 120px;
+            background: lightcoral;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: yellow;
+            text-align: center;
+            border-radius: 40px;
+            line-height: 50px;
+            position: absolute;
+            top: 5%;
+            left: 0%;
+            transform: rotate(0deg); 
+            animation: rotatea 10s linear infinite forwards;
+            
+        }
+        @keyframes rotatea {
+            0%{
+                top: 5%;
+                left: 0%;
+                transform: rotate(0deg);
+            }
+            50%{
+                top: 50%;
+                left: 50%;
+                transform: rotate(360deg);
+                background: blueviolet;
+                color: white;
+            }
+            100%{
+                top: 5%;
+                left: 0%;
+                transform: rotate(0deg);
+                background: lightcoral;
+                color: yellow;
+            }
+        }
+        .b{
+            height: 50px;
+            width: 120px;
+            background: lightcoral;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: yellow;
+            text-align: center;
+            border-radius: 40px;
+            line-height: 50px;
+            position: absolute;
+            top: 88%;
+            left: 0%;
+            animation: rotateb 10s linear infinite forwards;
+        }
+        @keyframes rotateb {
+            0%{
+                top: 88%;
+                left: 0%;
+                transform: rotate(0deg);
+            }
+            50%{
+                top: 50%;
+                left: 50%;
+                transform: rotate(360deg);
+                background: blueviolet;
+                color: white;
+            }
+            100%{
+                top: 88%;
+                left: 0%;
+                transform: rotate(0deg);
+                background: lightcoral;
+                color: yellow;
+            }
+        }
+        .c{
+            height: 50px;
+            width: 120px;
+            background: lightcoral;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: yellow;
+            text-align: center;
+            border-radius: 40px;
+            line-height: 50px;
+            position: absolute;
+            top: 5%;
+            left: 92%;
+            animation: rotatec 10s linear infinite forwards;
+        }
+        @keyframes rotatec {
+            0%{
+                top: 5%;
+                left: 92%;
+                transform: rotate(0deg);
+            }
+            50%{
+                top: 50%;
+                left: 50%;
+                transform: rotate(360deg);
+                background: blueviolet;
+                color: white;
+            }
+            100%{
+                top: 5%;
+                left: 92%;
+                transform: rotate(0deg);
+                background: lightcoral;
+                color: yellow;
+            }
+        }
+        .d{
+            height: 50px;
+            width: 120px;
+            background: lightcoral;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: yellow;
+            text-align: center;
+            border-radius: 40px;
+            line-height: 50px;
+            position: absolute;
+            top: 88%;
+            left: 92%;
+            animation: rotated 10s linear infinite forwards;
+        }
+        @keyframes rotated {
+            0%{
+                top: 88%;
+                left: 92%;
+                transform: rotate(0deg);
+            }
+            50%{
+                top: 50%;
+                left: 50%;
+                transform: rotate(360deg);
+                background: blueviolet;
+                color: white;
+            }
+            100%{
+                top: 88%;
+                left: 92%;
+                transform: rotate(0deg);
+                background: lightcoral;
+                color: yellow;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a">
+            Abhay
+        </div>
+        <div class="b">
+            Abhay
+        </div>
+        <div class="c">
+            Abhay
+        </div>
+        <div class="d">
+            Abhay
+        </div>
+    </div>
+</body>
+</html>

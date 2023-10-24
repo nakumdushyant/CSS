@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.first-nav{
+    height: 50px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.nav1{
+    list-style-type: none;
+    /* height: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+
+}
+.nav1 li{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    
+}
+.a1{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    z-index:1;
+    position: relative;
+}
+.a1:hover{
+   background: lightcoral;
+}
+/* imageset */
+.photo{
+width: 96rem;
+height: 450px;
+display: flex;
+transition: 1s;
+position: absolute;
+left: 0;
+display: none;
+
+}
+
+.list-item1:hover .photo{
+    
+    display: flex;
+    /* opacity: 1; */
+}
+.b1{
+height: 85%;
+width: 16%;
+background: white;
+box-shadow: 0 0 15px black;
+
+margin: 65px 0 0 110px;
+position: relative;
+}
+.ad{
+/* content: "ADD TO CART"; */
+position: absolute;
+width: 200px;
+height: 40px;
+color: white;
+outline: 4px solid rgb(76, 170, 138);
+font-weight: bold;
+text-align: center;
+line-height: 40px;
+background: rgb(76, 170, 138);
+bottom: 25px;
+left: 15px;
+transition: 0.4s;
+}
+.ad:hover{
+    outline-offset: 4px;
+}
+a{
+text-decoration: none;
+}
+.n1{
+height: 30px;
+width: 230px;
+font-size: 19px;
+text-align: center;
+font-weight: bold;
+display: block;
+color: red;
+margin: auto;
+transform: translate(0,250px);
+}
+img{
+    height: 100%; 
+    width: 100%;
+   transition: 1s;
+   position: absolute;
+   right: 0%;
+
+
+}
+.i1{
+    height: 60%;
+    width: 85%;
+    position: relative;
+    transform: translate(20px, -10px);
+    /* opacity: 0; */
+    overflow: hidden;
+}
+.i1::before{
+    content: "QUICK VIEW";
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    width: 100%;
+    background: black;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1;
+    position: absolute;
+    bottom: 100%;
+    right: 0%;
+    opacity: 0;
+    transition: 1s;
+}
+.i1:hover::before{
+    bottom: 0;
+    opacity: 1;
+}

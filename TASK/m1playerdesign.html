@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            height: 500px;
+            width: 280px;
+            border-radius: 30px;
+            box-shadow: 0 0 20px black;
+            margin: 100px auto;
+            font-family: 'Inter', sans-serif;
+        }
+        .main .header{
+            height: 130px;
+            /* border: 2px solid; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+        .header .dot{
+            font-size: 30px;
+            position: absolute;
+            color: darkolivegreen;
+            top: 20px;
+            left: 20px;
+        }
+        .dot span{
+            margin-left: 4px;
+        }
+        .header h5{
+            letter-spacing: 5px;
+            color: darkolivegreen;
+            position: absolute;
+            top: 10px;
+        }
+        .header .user{
+            background: none;
+            border: none;
+            font-size: 30px;
+            color: darkolivegreen;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .header .statis{
+            font-size: 28px;
+            color: darkolivegreen;
+            position: absolute;
+            top:70px;
+            left: 20px;
+        }
+        .header .on-off{
+            height: 30px;
+            width: 45px;
+            box-shadow: 0 0 8px rgba(128, 128, 128, 0.5) inset;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 70px;
+            right: 20px;
+        }
+
+        .on-off .on-off-button{
+            height: 20px;
+            width: 20px;
+            border-radius: 5px;
+            background: white;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: gray;
+            position: absolute;
+            left: 50%;
+            
+        }
+        .on-off-button span{
+            margin-left: 2px;
+        }
+        .on-off:hover .on-off-button{
+            left: 2px;
+        }
+
+
+
+
+        .main .img{
+            height: 300px;
+            /* border: 2px solid red; */
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+        }
+
+        .img .circle{
+            height: 130px;
+            width: 130px;
+            border: 12px solid white;
+            box-shadow: 0 0 5px rgba(128, 128, 128, 0.3) inset, 0 0 5px rgba(128, 128, 128, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+        
+        .circle::before{
+            content: "73%";
+            height: 96%;
+            width: 96%;
+            border-radius: 50%;
+            font-size: 10px;
+            text-align: center;
+            line-height: 185px;
+            background: conic-gradient(white 0deg, white 15deg, blueviolet 15deg, blueviolet 40deg, darkorchid 120deg, blueviolet 190deg, blueviolet 230deg, white 230deg, white 360deg);
+            color: white;
+            position: absolute;
+        }
+
+        .circle .in-circle{
+            height: 60px;
+            width: 60px;
+            background: white;
+            border: 20px solid white;
+            box-shadow: 0 0 5px rgba(128, 128, 128, 0.3) inset, 0 0 5px rgba(128, 128, 128, 0.3);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .in-circle-left{
+            height: 21px;
+            width: 21px;
+            background: blueviolet;
+            border-radius: 50%;
+            z-index: 1;
+            position: absolute;
+            left: 13px;
+            top: 70px;
+
+        }
+        .in-circle-right{
+            height: 20px;
+            width: 20px;
+            background: blueviolet;
+            border-radius: 50%;
+            z-index: 1;
+            position: absolute;
+            right: 31px;
+            bottom: 82px;
+        }
+
+        .img .aqua, .green, .orange, .pink{
+            height: 110px;
+            width: 35px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgba(128, 128, 128, 0.3) inset ;
+            margin-top: 150px;
+            position: relative;
+        }
+        .in-aqua, .in-green, .in-orange, .in-pink{
+            height: 94%;
+            width: 80%;
+            border-radius: 20px;
+            position: absolute;
+            bottom: 3%;
+            left: 10%;
+            background: red;
+            
+        }
+        .in-aqua{
+            height: 80%;
+            background: linear-gradient(blue,lightblue);
+        }
+        .in-green{
+            height: 0;
+        }
+        .in-orange{
+            height: 50%;
+            background: linear-gradient(orange, yellow);
+        }
+        .in-pink{
+            height: 90%;
+            background: linear-gradient(fuchsia, pink);
+        }
+        .img .work{
+            width: 100%;
+            padding: 0 20px;
+            font-size: 9px;
+            display: flex;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 90%;
+            left: 0;
+        }
+        .work .relax, .cardio, .strength, .stretch{
+            width: 40px;
+            color: gray;
+            text-align: center;
+        }
+
+
+
+        .main .menu{
+            height: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            /* border: 2px solid; */
+        }
+        .menu button{
+            height: 40px;
+            width: 40px;
+            background: white;
+            font-size: 20px;
+            color: darkolivegreen;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="dot">:<span>:</span></div>
+            <h5>FITNESS</h5>
+            <button class="user"><i class="fa fa-user-o" aria-hidden="true"></i></button>
+            <span class="statis">Statistics</span>
+            <div class="on-off"><div class="on-off-button">:<span>:</span></div></div>
+        </div>
+
+
+
+
+        <div class="img">
+
+            <div class="circle">
+                <div class="in-circle"></div>
+                <div class="in-circle-left"></div>
+                <div class="in-circle-right"></div>
+            </div>
+
+
+            <div class="aqua"><div class="in-aqua"></div></div>
+            <div class="green"><div class="in-green"></div></div>
+            <div class="orange"><div class="in-orange"></div></div>
+            <div class="pink"><div class="in-pink"></div></div>
+            <div class="work">
+                <div class="relax">Relax 82%</div>
+                <div class="cardio">Cardio 0%</div>
+                <div class="strength">Strength 54%</div>
+                <div class="stretch"> Stretch 91%</div>
+            </div>
+        </div>
+
+
+
+        <div class="menu">
+            <button><i class="fa fa-home" aria-hidden="true"></i></button>
+            <button><i class="fa fa-handshake-o" aria-hidden="true"></i></button>
+            <button><i class="fa fa-bar-chart" aria-hidden="true"></i></button>
+        </div>
+    </div>
+</body>
+</html>

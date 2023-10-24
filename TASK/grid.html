@@ -1,0 +1,93 @@
+58grid.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body *
+        {
+            border: 2px solid;
+            font-size: 34px;
+        }
+        .row 
+        {
+            background: gray;
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+            grid-template-rows: 100px;
+        }
+        .col 
+        {
+            /* width: 50%;
+            height: 200px; */
+        }
+
+        .row1
+        {
+            background: coral;
+            display: grid;
+            grid-template-columns: 
+            repeat(2,1fr);
+            grid-template-rows: auto auto;
+            padding: 35px;
+            gap: 20px;
+            /* row-gap: 20px; */
+            /* column-gap: 20px; */
+        }
+        /* .col1 
+        {margin: 20px;} */
+        .testGrid 
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px 50px 80px;
+            gap: 2px;
+            padding: 2px;
+        }
+
+        .test 
+        {
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col"> col 1</div>
+        <div class="col"> col 2</div>
+        
+     
+    </div>
+
+
+    <div class="row1">
+        <div class="col1">Col 1</div>
+
+
+        <div class="col1 testGrid">
+            <div class="y">1 </div>
+            <div class="y">1 </div>
+            <div class="y">1 </div>
+            <div class="y">1 </div>
+            <div class="y">1 </div>
+        </div>
+
+
+
+
+        <div class="col1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tenetur, suscipit nam velit deleniti omnis, aperiam adipisci libero nesciunt porro odit magni, explicabo quam nulla excepturi veniam impedit nostrum doloribus?
+        </div>
+        <div class="col1 test">
+            <div class="t">123</div>
+            <div class="t">123</div>
+            <div class="t">123</div>
+        </div>
+    </div>
+    
+</body>
+</html>

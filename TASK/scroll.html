@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+    .nav{
+        height: 50px;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav ul{
+        display: flex;
+    }
+    .nav li{
+        display: inline;
+        position: relative;
+        margin: 20px;
+        display: flex;
+    }
+    .nav a{
+        text-decoration: none;
+        width: 50px;
+        background: red;
+        padding: 10px 10px;
+        color: white;
+
+    }
+    #home,#about,#service,#contact{
+        height: 500px;
+    }
+    button{
+        height: 50px;
+        width: 100px;
+        position: fixed;
+        bottom: 50px;
+        left:90%;
+    }
+    button a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    .ser{
+        display: inline-block;
+        background: gray;
+        position: absolute;
+        padding: 5px;
+        /* z-index: 1; */
+        top: 100%;
+        left: 100%;
+        opacity: 0;
+        transition: 1s;
+
+    }
+    .nav li:hover .ser{
+        opacity: 1;
+    }
+
+</style>
+<body>
+    <div class="nav" id="nav1">
+        <ul>
+            <li><a href="#home">Home</a>
+                <div class="ser">click home</div>
+            </li>
+            <li><a href="#about">About</a>
+                <div class="ser">click about</div>
+            </li>
+            <li><a href="#service">Services</a>
+            <div class="ser">click service</div>
+            </li>
+            <li><a href="#contact">Contact</a>
+                <div class="ser">click contact</div>
+            </li>
+        </ul>
+    </div>
+    <div id="home">Home</div>
+    <div id="about">About</div>
+    <div id="service">Service</div>
+    <div id="contact">Contact</div>
+    <Button><a href="#nav1">button</a></Button>
+</body>
+</html>

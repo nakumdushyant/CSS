@@ -1,0 +1,411 @@
+/* Start
+ (*)Universal element,All <a> tag apply and All font awesome icon 
+ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+.fa
+{
+    color: aquamarine;
+    margin-right: 10px;
+}
+
+a
+{
+    display: block;
+    /* background: #000; */
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+} 
+
+/* END
+(*)Universal element,All <a> tag apply and All font awesome icon
+ */
+
+
+ 
+/* Start First-nav(sign in, sign up, etc..) */
+
+.nav1
+{
+    list-style-type: none;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1
+{
+    display: block;
+    text-align: center;
+    width: 250px;
+    font-size: 14px;
+    border-right: 1px solid gray;
+}
+
+/* End First nav */
+
+
+
+/* start second nav */
+
+/* Start Navigationbar(HOME etc..) */
+
+.second-nav
+{
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav2
+{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    left: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav2 .list-item2
+{
+
+    height: 80px;
+    width: 130px;
+    text-align: center;
+    /* line-height: 80px; */
+
+}
+
+.a2
+{
+    line-height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.a2::after
+{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: aquamarine;
+    transition: 1s;
+}
+
+.a2:hover::after
+{
+    width: 100%;
+    left: 0;
+    /* transition: 1s; */
+}
+/* 
+.a2::before
+{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    
+    visibility: visible;
+    background: red;
+    background: aquamarine;
+    transition: 1s;
+}
+
+.a2:hover::before
+{
+    width: 100%;
+    visibility: hidden;
+    transition: 0s;
+
+} */
+
+ /* End Navigationbar */
+
+
+/* MEN'S-Women's Slide Start */
+
+.men-women-slid{
+    box-shadow: 0 0 10px black;
+    width: 650px;
+    height: 280px;
+    display: flex;
+    padding: 30px 0 0 30px;
+    display: none;
+}
+.list-item2:hover .men-women-slid{
+    display: flex;
+}
+.image{
+    height: 222px;
+    width: 259px;
+    /* border: 2px solid black; */
+    position: relative;
+    overflow: hidden;
+}
+.image img{
+    height: 220px;
+    /* width: 220px; */
+    object-fit: contain;
+   
+}
+.image::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* height: 250px; */
+    background: rgba(0, 0, 0, 0.2);
+    top: 100%;
+    right: 100%;
+    transition: 1s;
+}
+.image:hover::after{
+    top: 0;
+    right: 0;
+}
+.image::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* height: 250px; */
+    background: rgba(0, 0, 0, 0.2);
+    bottom: 100%;
+    left: 100%;
+    transition: 1s;
+}
+.image:hover::before{
+    bottom: 0;
+    left: 0;
+}
+.col1{
+    width: 160px;
+    margin-left: 30px;
+}
+.col2{
+    width: 160px;
+}
+.itm1{
+    height: 33px;
+    display: flex;
+    
+    /* border: 2px solid black; */
+}
+.itm1-itms{
+    height: 200px;
+    width: 700px;
+    z-index: 1;
+    background: white;
+    /* top: 5px; */
+    display: flex;
+    justify-content: center;
+    display: none;
+
+}
+.img{
+    height: 160px;
+    width: 200px;
+    box-shadow: 0 0 10px black;
+    /* padding: 5px 8% 5px 8%; */
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+
+}
+.img img{
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    box-shadow: 0 0 10px black;
+    object-fit: contain;
+}
+.img h3{
+    position: absolute;
+    font-size: 16px;
+    /* background: white; */
+    width: 100%;
+    text-align: center;
+    top: 75%;
+}
+.sld{
+    
+    display: inline-block;
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.sld:hover{
+    color: aquamarine;
+}
+.sld:hover h3{
+    color: black;
+}
+.sld:hover .itm1-itms{
+    display: flex;
+}
+
+
+
+/* MEN's-Women's slide End */
+
+
+
+/* shortcode start */
+
+.itms
+{
+    box-shadow: 0 0 15px black;
+    display: none;
+    /* color: black; */
+}
+
+.itm
+{
+    height: 50px;
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 3px solid gray;
+    line-height: 50px;
+}
+
+.list-item2:hover .itms
+{
+    display: block;
+}
+
+.itm0
+{
+    color: black;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.itm0:hover
+{
+    background: aquamarine;
+    color: white;
+}
+
+/* shortcode end */
+
+
+/* start button */
+
+.ct
+{
+    height: 80px;
+    width: 180px;
+    background: aquamarine;
+    position: absolute;
+    left: 70%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crt
+{
+    height: 50px;
+    width: 50px;
+    background: rgba(0,0,0,0.3);
+    line-height: 50px;
+    font-size: 25px;
+    /* color: black; */
+
+}
+
+.fa-cart-arrow-down
+{
+    color: #000;
+}
+
+/* End button */
+
+/* end second nav */
+
+
+
+/* Start third (search etc...) */
+
+/* Search Button Start */
+
+.third
+{
+    
+    /* width: 500px; */
+    height: 130px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.in
+{
+    width: 400px;
+    height: 50px;
+    border-color: gray solid;
+    margin-left: 100px;
+    padding-left: 10px;
+}
+
+::placeholder
+{
+    font-size: 17px;
+    
+}
+
+.search
+{
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    background: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    
+}
+
+.srh
+{
+    background: transparent;
+    /* text-align: center; */
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.srch
+{
+    color: white;
+}
+
+/* Search Button End */
+
+/* Third END */

@@ -1,0 +1,134 @@
+body{
+    height: 97vh;
+    background: black;
+    background-attachment: fixed;
+}
+
+.main{
+    height: 97vh;
+    width: 50rem;
+    margin: auto;
+}
+
+.form-txt{
+    height: 400px;
+    width:350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(162, 83, 9);
+    margin: auto;
+    transform: translate(0,-200px);
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    
+}
+
+.circle1{
+    height: 150px;
+    width:150px;
+    background: conic-gradient(from 180deg,#0000ff,rgba(173, 216, 230, 0.6));
+    transform: translate(150px,55px);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.circle2{
+    height: 150px;
+    width:150px;
+    background: conic-gradient(#ffa500,rgba(255, 255, 0, 0.6));
+    transform: translate(500px,290px);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.h1-set{
+    text-align: center;
+    color: #fff;
+    transform: translate(0,20px);
+    padding-bottom: 30px;
+}
+
+.label_input_margin{
+    margin: 10px;
+    margin-left: 30px;
+}
+
+label{
+    color:#fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn{
+    background: white;
+    margin: auto;
+    margin-top: 20px;
+    height: 43px;
+    width: 15rem;
+    text-align: center;
+    padding-top: 8px;
+    color: transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+}
+
+button{
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.input_border{
+    background: none;
+    border: none;
+    height: 42px;
+    width: 17rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+::placeholder{
+    color: white;
+    opacity: 0.9;
+}
+
+.fa{
+    margin-right: 2px;
+    color: white;
+}
+
+.btn-google{
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    height: 35px;
+    width: 10rem;
+    text-align: center;
+    padding-top: 6px;
+    color: transparent;
+    transform: translate(10px,0);
+}
+
+.google{
+    color: white;
+    opacity: 1;
+}
+
+.btn-facebook{
+    background: rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    height: 35px;
+    width: 10rem;
+    text-align: center;
+    color: transparent;
+    padding-top: 6px;
+    transform: translate(180px,-61px);
+}
+
+.face{
+    color: white;
+    opacity: 1;
+}

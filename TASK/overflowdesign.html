@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 97vh;
+            background: conic-gradient(lightgreen, lightcoral);
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            /* transition: 10s; */
+            
+        }
+        .a{
+            height: 600px;
+            width: 600px;
+            background: radial-gradient(lightcoral 40%, lightgreen);
+            margin: auto;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 15px 40px black,0 0 100px gold inset;
+            padding: 280px 0 0 0 ;
+            transform: rotate(-1080deg);
+            /* border: 20px rgb(237, 92, 92) ridge; */
+            transition: 5s;
+        }
+        .b{
+            height: 600px;
+            width: 600px;
+            /* margin: auto; */
+            background: radial-gradient(lightcoral, lightgreen);
+            border-radius: 50%;
+            /* padding-bottom: 700px; */
+            /* overflow: hidden; */
+            box-shadow: 0 0 100px gold inset, 0 0 100px gold;
+            /* border: 20px rgb(237, 92, 92) ridge; */
+        }
+        .c{
+            height: 600px;
+            width: 600px;
+            /* margin: auto; */
+            background:radial-gradient(lightcoral, lightgreen);
+            border-radius: 50%;
+            margin-top: -75rem;
+            box-shadow: 0 0 100px gold inset, 0 15px 100px gold;
+            /* border: 20px rgb(237, 92, 92) ridge; */
+        }
+        /* body:hover{
+            transform: rotate(360deg);
+        } */
+        body:hover .a{
+            transform: rotate(2160deg) scale(0);
+        }
+        </style>
+</head>
+<body>
+    <div class="a">
+        
+        <div class="b">
+
+        </div>
+        <div class="c">
+
+        </div>
+        
+    </div>
+</body>
+</html>

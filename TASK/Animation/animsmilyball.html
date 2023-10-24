@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .main{
+            height: 700px;
+            width: 100%;
+            background: black;
+            /* border: 2px solid black; */
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            
+        }
+        .circle{
+            height: 400px;
+            width: 400px;
+            background: yellow;
+            border: 2px solid black;
+            position: absolute;
+            border-radius: 50%;
+        }
+        .circle::after{
+            content: "";
+            height: 2px;
+            width: 50px;
+            background: black;
+            transform: rotate(340deg);
+            position: absolute;
+            top:30%;
+            left: 20%;
+            animation: eyeup 1s linear infinite;
+        }
+        .circle::before{
+            content: "";
+            height: 2px;
+            width: 50px;
+            background: black;
+            transform: rotate(20deg);
+            position: absolute;
+            top: 30%;
+            right: 20%;
+            animation: eyeup 1s linear infinite;
+        }
+        @keyframes eyeup {
+            from{
+                top: 30%;
+            }
+            to{
+                top: 28%;
+            }
+        }
+        .eye{
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            background: white;
+            border-radius: 50%;
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .eye::before{
+            content: "";
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            /* top: 30%; */
+            animation: eyebefore 5s linear infinite;
+        }
+        @keyframes eyebefore {
+            0%{
+                left: 60%;
+            }
+            50%{
+                left:60%
+            }
+            75%{
+                left: 0%;
+            }
+            100%{
+                left: 60%;
+            }
+        }
+        .eye::after{
+            content: "";
+            width: 100px;
+            border-radius: 50%;
+            background: black;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: eyeafter 5s linear 1;
+        }
+        .eye:hover::after{
+            animation: eyeafter1 0.2s linear 1 forwards;
+        }
+        @keyframes eyeafter {
+            from{
+                height: 100px;
+            }
+            to{
+                height: 0px;
+            }
+        }
+        @keyframes eyeafter1 {
+            from{
+                height: 0px;
+            }
+            to{
+                height: 100px;
+            }
+        }
+        .smil{
+            height: 200px;
+            width: 200px;
+            border: 5px solid transparent;
+            border-bottom: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 35%;
+            left: 25%;
+        }
+        .smil::after{
+            content: "";
+            height: 15px;
+            width: 2px;
+            background: black;
+            transform: rotate(30deg);
+            position: absolute;
+            top: 89%;
+            left: 22%;
+        }
+        .smil::before{
+            content: "";
+            height: 15px;
+            width: 2px;
+            background: black;
+            transform: rotate(330deg);
+            position: absolute;
+            top: 89%;
+            right: 22%;
+        }
+        .cl{
+            height: 100px;
+            width: 100px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            filter: blur(40px);
+        }
+        .cl1{
+            height: 100px;
+            width: 100px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            filter: blur(40px);
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="circle">
+            <div class="smil"></div>
+            <div class="cl"></div>
+            <div class="cl1"></div>
+        </div>
+        <div class="eye">
+        </div>
+        <div class="eye">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .main{
+            margin: 150px auto;
+            height: 70px;
+            width: 150px;
+            /* border: 2px solid red; */
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .main::before{
+            content: "";
+            height: 200px;
+            width: 200px;
+            background: conic-gradient(from 20deg,red 0deg,red 90deg, white 90deg,white 180deg, red 180deg,red 270deg, white 270deg,white 360deg);
+            position: absolute;
+            animation: Abhay 2s linear infinite;
+            /* transform: rotate(15deg); */
+        }
+        .main::after{
+            content: "Abhay";
+            text-align: center;
+            line-height: 60px;
+            font-size: 20px;
+            height: 60px;
+            width: 140px;
+            background: white;
+            position: absolute;
+        }
+        @keyframes Abhay {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>

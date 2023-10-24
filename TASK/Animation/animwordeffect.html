@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        h1{
+            font-size: 70px;
+        }
+        h1::first-letter{
+            color: red;
+        }
+         .b{
+            height: 80px;
+            width: 450px;
+            background: white;
+            margin: auto;
+            position: absolute;
+            animation: word 10s infinite forwards;
+
+            /* animation: name duration timing-function delay iteration-count direction steps(); */
+        }
+        @keyframes word {
+            0%{
+                bottom: 45%;
+                left: 36%;
+            }
+            7%{
+                bottom: 45%;
+                left: 39.5%;
+            }
+            14%{
+                bottom: 45%;
+                left: 42%;
+            }
+            21%{
+                bottom: 45%;
+                left: 43%;
+            }
+            28%{
+                bottom: 45%;
+                left: 44%;
+            } 
+            35%{
+                bottom: 45%;
+                left: 46.5%;
+            } 
+            42%{
+                bottom: 45%;
+                left: 52%;
+            } 
+            56%{
+                bottom: 45%;
+                left: 54.5%;
+            } 
+            63%{
+                bottom: 45%;
+                left: 56%;
+            }   
+            70%{
+                bottom: 45%;
+                left: 57.5%;
+            } 
+            77%{
+                bottom: 45%;
+                left: 60%;
+            } 
+            84%{
+                bottom: 45%;
+                left: 61.5%;
+            } 
+            91%{
+                bottom: 45%;
+                left: 62.5%;
+            } 
+            100%{
+                bottom: 45%;
+                left: 64%;
+            }
+        } 
+ 
+        .b::after{
+            content: "";
+            height: 100%;
+            width: 4px;
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: wordcur 0.8s linear infinite;
+        }
+        @keyframes wordcur {
+            0%{
+               opacity: 0; 
+            }
+            100%{
+                opacity: 1;
+            }  
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>
+        Hello World...
+        </h1>
+        <div class="b">
+        </div>
+    </div>
+</body>
+</html>
